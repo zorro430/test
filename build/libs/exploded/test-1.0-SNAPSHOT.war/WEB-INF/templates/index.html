@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:score="http://thymeleafexamples">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" media="all" href="../../css/style.css.css" th:href="@{/css/style.css}"/>
+</head>
+<body>
+    <form action="/login?m=login" method="post">
+        <input name="name" th:value="*{name}"><input type="submit" th:value="提交">
+    </form>
+    <span th:text="${msg}" class="test"/>
+</body>
+</html>
